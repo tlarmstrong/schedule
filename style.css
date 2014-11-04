@@ -1,0 +1,77 @@
+body {
+  padding-top: 10px;
+  padding-bottom: 40px;
+  color:#696969 !important;
+  font-family: 'Muli', sans-serif !important;
+}
+
+.pageTitle
+{
+  margin-bottom: 5px;
+  max-width: 350px;
+  margin-right:auto;
+  margin-left:auto;
+}
+
+.pageTitle > h1
+{
+  text-align:left;
+}
+
+.form-signin {
+  max-width: 375px;
+  padding: 25px;
+  margin: 0 auto;
+  background-color: #F5F5F5;
+  border-radius: 5px;
+  margin-bottom:10px;
+}
+
+.form-signin-heading
+{
+  margin-top:0px;
+}
+
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input
+{
+  margin-bottom: 10px;
+}
+
+#errorMessage
+{
+  height: 30px;
+  color: red;
+}
+
+.btn-primary 
+{
+background-image: linear-gradient(to bottom,#BABABA 0,#D4D4D4 100%) !important;
+filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+background-repeat: repeat-x;
+border-color: #BABABA !important;
+}
+.btn-primary 
+{
+background-color: #D4D4D4 !important;
+}
+
+
