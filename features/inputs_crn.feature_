@@ -1,0 +1,92 @@
+Feature: The user inputs CRN requested time days and sent to database
+
+    Scenario: Successful storing input from webpage to PHP file
+        Given there are no current schedule conflicts with inputted CRN
+        When I inputted 123456, 10 0-11 0, Monday (checked), Wednesday(checked), Friday (checked) 
+        Then the variables (CRN, beg_time, end_time, days[i]) should have 123456, 10 0,11 0, [Monday Wednesday Friday] respectively
+
+    Scenario: No conflicts with student schedules
+        Given database of student schedules
+        And course catalogue
+        When user inputs course number and testing time and day
+        Then new screen appears dictating no conflicts with the option of viewing the calendar grid of severities
+        And The time block specified will be outlined and shaded white to dictate no severity
+
+    Scenario: Conflict with senior’s schedule, not needed for graduation
+        Given database of student schedules
+        And course catalogue
+        And catalogue year
+        When user inputs course number and testing time and day
+        Then new screen appears with calendar grid, with every grid either white, green, yellow, orange, or red
+        And The time block specified will be outlined and shaded yellow to dictate a low severity
+
+    Scenario: Conflict with senior’s schedule, needed for graduation, offered next semester student will attend school
+        Given database of student schedules
+        And course catalogue
+        And catalogue year
+        And graduation date
+        When user inputs course number and testing time and day
+        Then new screen appears with calendar grid, with every grid either white, green, yellow, orange, or red
+        And The time block specified will be outlined and shaded orange to dictate a high severity
+
+    Scenario: Conflict with senior’s schedule, needed for graduation, not offered next semester student will attend school
+        Given database of student schedules
+        And course catalogue
+        And catalogue year
+        And graduation date
+        When user inputs course number and testing time and day
+        Then new screen appears with calendar grid, with every grid either white, green, yellow, orange, or red
+        And The time block specified will be outlined and shaded red to dictate the highest severity
+
+    Scenario: Conflict with junior’s schedule, not needed for graduation
+        Given database of student schedules, course catalogue, and catalogue year
+        When user inputs course number and testing time and day
+        Then new screen appears with calendar grid, with every grid either white, green, yellow, orange, or red. The time block specified will be outlined and shaded yellow to dictate a low severity
+
+    Scenario: Conflict with junior’s schedule, needed for graduation
+        Given database of student schedules
+        And course catalogue
+        And catalogue year
+        When user inputs course number and testing time and day
+        Then new screen appears with calendar grid, with every grid either white, green, yellow, orange, or red
+        And The time block specified will be outlined and shaded orange to dictate a high severity
+
+    Scenario: Conflict with sophomore’s schedule, not needed for graduation
+        Given database of student schedules
+        And course catalogue
+        And catalogue year
+        When user inputs course number and testing time and day
+        Then new screen appears with calendar grid with every grid either white, green, yellow, orange, or red dictate a very low severity
+
+    Scenario: Conflict with sophomore’s schedule, needed for graduation
+        Given database of student schedules
+        And course catalogue
+        And catalogue year
+        When user inputs course number and testing time and day
+        Then new screen appears with calendar grid, with every grid either white, green, yellow, orange, or red
+        And The time block specified will be outlined and shaded yellow to dictate a low severity
+
+    Scenario: Conflict with freshman’s schedule, not needed for graduation
+        Given database of student schedules
+        And course catalogue
+        And catalogue year
+        When user inputs course number and testing time and day
+        Then new screen appears with calendar grid, with every grid either white, green, yellow, orange, or red
+        And The time block specified will be outlined and shaded green to dictate a very low severity
+
+    Scenario: Conflict with freshman’s schedule, needed for graduation
+        Given database of student schedules
+        And course catalogue
+        And catalogue year
+        When user inputs course number and testing time and day
+        Then new screen appears with calendar grid, with every grid either white, green, yellow, orange, or red
+        And The time block specified will be outlined and shaded yellow to dictate a low severity
+
+    Scenario: Conflict with multiple students
+        Given database of student schedules
+        And course catalogue
+        And catalogue year
+        And graduation date
+        When user inputs course number and testing time and day
+        Then new screen appears with calendar grid, with every grid either white, green, yellow, orange, or red
+        And The time block specified will be outlined and shaded the color of the highest severity amongst the students
