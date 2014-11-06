@@ -1,4 +1,4 @@
-function validateUser()
+/*function validateUser()
 {
 	var user = document.forms["signUp"]["username"].value;
 
@@ -19,7 +19,7 @@ function validatePass()
 		alert("Please enter your password");
 	  		return false;
 	}
-}
+}*/
 
 function validateForm()
 {
@@ -28,29 +28,54 @@ function validateForm()
 
 	if ((user == null || user == "") && (pass == null || pass == ""))
 	{
-			document.getElementById("passError").innerHTML = "Please enter a username and password";
+			document.getElementById("errorMessage").innerHTML = "Please enter a username and password";
 			return false;
 	}
 
 	else if (user == null || user == "")
   	{
   		//alert("Please enter your username");
-  		document.getElementById("nameError").innerHTML = "Please enter a username";
+  		document.getElementById("errorMessage").innerHTML = "Please enter a username";
   		return false;
   	}
 
 	else if (pass == "" || pass == null)
 	{
 		//alert("Passwords must match");
-		document.getElementById("passError").innerHTML = "Please enter a password";
+		document.getElementById("errorMessage").innerHTML = "Please enter a password";
 		return false;
 	}
 }
 
-function validateTest()
+function validateSemester()
+{
+	var semester = document.forms["semyear"]["semester"].value;
+	var year = document.forms["semyear"]["year"].value;
+
+	if (semester == "" && year == "")
+	{
+			document.getElementById("errorMessage").innerHTML = "Please choose a semester and year";
+			return false;
+	}
+
+	else if (semester == "")
+	{
+			document.getElementById("errorMessage").innerHTML = "Please choose a semester";
+			return false;
+	}
+
+	else if (year == "")
+	{
+			document.getElementById("errorMessage").innerHTML = "Please choose a year";
+			return false;
+	}
+}
+
+function validateClass()
 {
 	var course = document.forms["schedule"]["courseNum"].value;
 	var time = document.forms["schedule"]["testTime"].value;
+	var instructor = document.forms["schedule"]["instructor"].value;
 	//var day = document.forms["schedule"]["testDay"].value;
 
 
@@ -67,23 +92,29 @@ function validateTest()
 		day += 1;
 
 
-	if ((course == null || course == "") && (time == "") && (day == 0))
+	if ((course == null || course == "") && (instructor == "") && (time == "") && (day == 0))
 	{
-			document.getElementById("errorMessage").innerHTML = "Please enter a course number, test day and time";
+			document.getElementById("errorMessage").innerHTML = "Please enter a course number, instructor, day, and time for the course";
 			return false;
 	}
 
-	else if (course == null || course == "")
+  	else if (time == "" && day == 0 && instructor == "")
+  	{
+  		//alert("Please enter your username");
+  		document.getElementById("errorMessage").innerHTML = "Please choose an instructor, day, and time for the course";
+  		return false;
+  	}
+
+  		else if (course == null || course == "")
   	{
   		//alert("Please enter your username");
   		document.getElementById("errorMessage").innerHTML = "Please enter a course number";
   		return false;
   	}
-
-  	else if (time == "" && day == 0)
+  	
+  	else if (instructor == "")
   	{
-  		//alert("Please enter your username");
-  		document.getElementById("errorMessage").innerHTML = "Please enter a time and day";
+  		document.getElementById("errorMessage").innerHTML = "Please choose an instructor";
   		return false;
   	}
 

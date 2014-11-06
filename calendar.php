@@ -7,6 +7,17 @@
 <script src='fullcalendar-2.1.1/lib/moment.min.js'></script>
 <script src='fullcalendar-2.1.1/lib/jquery.min.js'></script>
 <script src='fullcalendar-2.1.1/fullcalendar.min.js'></script>
+
+<link href="style.css" rel="stylesheet" />
+<link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+<!-- <script src="js/book-script.js"></script> -->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+<!-- Optional theme -->
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+<!-- Latest compiled and minified JavaScript -->
+<script type="text/javascript" src="loginCheck.js"></script>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
 <script>
 
     $(document).ready(function() {
@@ -77,7 +88,7 @@
 
 </script>
 <style>
-
+/*
     body {
         margin: 40px 10px;
         padding: 0;
@@ -86,10 +97,10 @@
     }
 
     #calendar {
-        max-width: 900px;
+        max-width: 800px;
         margin: 0 auto;
     }
-
+*/
 </style>
 </head>
 <body>

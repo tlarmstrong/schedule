@@ -23,17 +23,17 @@
 	</head>
 	<body>
 		<header>
-			<div class="title">
-				<h1 class="pageTitle">ACU Test Scheduler</h1>
+			<div class="pageTitle">
+				<img itemprop="image" class="logo" src="ACUlogo.png" alt="acu"/>
+				<h1 class="title">Class Scheduler</h1>
 			</div>
 		</header>
 		<div class="container">
 			<form class="form-signin" role="form" name="signUp" action="enter.php" method="post" onsubmit="return validateForm();">
-	        <h2 class="form-signin-heading">Login</h2>
-            	<input class="form-control" type="text" name="username" placeholder = "username" onblur="return validateUser();"/>
-            	<div id="nameError"></div>
-				<input class="form-control" type="password" name="password" placeholder="password" onblur="return validatePass();"/>
-				<div id="passError"></div>
+	        <!--<h2 class="form-signin-heading">Login</h2> -->
+            	<input class="form-control" id="topField" type="text" name="username" placeholder="username" autofocus/>
+				<input class="form-control" type="password" name="password" placeholder="password"/>
+				<div id="errorMessage"></div>
 				<button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
 			</form>
 		</div>
