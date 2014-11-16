@@ -96,6 +96,47 @@ body {
   color: red;
 }
 
+.calendarPageTitle
+{
+  float: left !important;
+  margin-left: 0px;
+  margin-top: 10px;
+}
+
+.calTitle
+{
+  margin-top: 5px !important;
+  margin-left: 5px !important;
+}
+
+.calLogo
+{
+  height: 50px;
+  margin-left: 0px !important;
+}
+
+h2
+{
+  margin-left: 0px !important;
+  margin-right: auto !important;
+  float: right !important;
+  font-size: 23px !important;
+}
+
+.fc-right
+{
+  width:300px;
+  float:right !important;
+  margin-top: 10px;
+}
+
+.fc-button-group
+{
+  margin-left: 20px !important;
+  float: right !important;
+  margin-right: auto !important;
+}
+
 #calendar 
 {
     max-width: 900px;
@@ -103,8 +144,8 @@ body {
 }
 
 .fc-event {
-  border: 1px solid #7E61A3; /* default BORDER color */
-  background-color: #7E61A3; /* default BACKGROUND color */
+  border: 1px solid #A5A5A5; /* default BORDER color */
+  background-color: #A5A5A5; /* default BACKGROUND color */
   font-weight: normal; /* undo jqui's ui-widget-header bold */
 }
 

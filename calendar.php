@@ -6,7 +6,7 @@
 <link href='fullcalendar-2.1.1/fullcalendar.print.css' rel='stylesheet' media='print' />
 <script src='fullcalendar-2.1.1/lib/moment.min.js'></script>
 <script src='fullcalendar-2.1.1/lib/jquery.min.js'></script>
-<script src='fullcalendar-2.1.1/fullcalendar.min.js'></script>
+<script src='fullcalendar-2.1.1/fullcalendar.js'></script>
 
 <link href="style.css" rel="stylesheet" />
 <link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
@@ -20,88 +20,125 @@
 <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
 <script>
 
-    $(document).ready(function() {
-
+        $(document).ready(function() {
+        
         $('#calendar').fullCalendar({
-            defaultDate: '2014-09-12',
+            header: {
+                left: '',
+                center: '',
+                right: 'title month,agendaWeek,agendaDay prev,next'
+            },
+            defaultDate: null,
             editable: true,
             eventLimit: true, // allow "more" link when too many events
             events: [
                 {
-                    title: 'All Day Event',
-                    start: '2014-09-01'
+                    id: 230,
+                    title: 'CS230',
+                    start: '2014-11-18T15:00:00',
+                    end: '2014-11-18T16:30:00',
+                    room: 'MBB 115'
                 },
                 {
-                    title: 'Long Event',
-                    start: '2014-09-07',
-                    end: '2014-09-10'
+                    id: 230,
+                    title: 'CS230',
+                    start: '2014-11-20T15:00:00',
+                    end: '2014-11-20T16:30:00',
+                    room: 'MBB 115'
                 },
                 {
-                    id: 999,
-                    title: 'Repeating Event',
-                    start: '2014-09-09T16:00:00'
+                    id: 330,
+                    title: 'CS330',
+                    start: '2014-11-20T16:30:00',
+                    end: '2014-11-20T18:00:00',
+                    room: 'MBB 217'
                 },
                 {
-                    id: 999,
-                    title: 'Repeating Event',
-                    start: '2014-09-16T16:00:00'
+                    id: 330,
+                    title: 'CS330',
+                    start: '2014-11-18T16:30:00',
+                    end: '2014-11-18T18:00:00',
+                    room: 'MBB 217'
                 },
                 {
-                    title: 'Conference',
-                    start: '2014-09-11',
-                    end: '2014-09-13'
+                    id: 432,
+                    title: 'IS432',
+                    start: '2014-11-17T10:00:00',
+                    end: '2014-11-17T11:00:00',
+                    room: 'MBB 317'
                 },
                 {
-                    title: 'Meeting',
-                    start: '2014-09-12T10:30:00',
-                    end: '2014-09-12T12:30:00'
+                    id: 432,
+                    title: 'IS432',
+                    start: '2014-11-19T10:00:00',
+                    end: '2014-11-19T11:00:00',
+                    room: 'MBB 317'
                 },
                 {
-                    title: 'Lunch',
-                    start: '2014-09-12T12:00:00'
+                    id: 432,
+                    title: 'IS432',
+                    start: '2014-11-21T10:00:00',
+                    end: '2014-11-21T11:00:00',
+                    room: 'MBB 317'
                 },
                 {
-                    title: 'Meeting',
-                    start: '2014-09-12T14:30:00'
+                    id: 115,
+                    title: 'CS115',
+                    start: '2014-11-17T10:00:00',
+                    end: '2014-11-17T11:00:00',
+                    room: 'MBB 312'
                 },
                 {
-                    title: 'Happy Hour',
-                    start: '2014-09-12T17:30:00'
+                    id: 115,
+                    title: 'CS115',
+                    start: '2014-11-19T10:00:00',
+                    end: '2014-11-19T11:00:00',
+                    room: 'MBB 312'
                 },
                 {
-                    title: 'Dinner',
-                    start: '2014-09-12T20:00:00'
+                    id: 115,
+                    title: 'CS115',
+                    start: '2014-11-21T10:00:00',
+                    end: '2014-11-20T11:00:00',
+                    room: 'MBB 312'
                 },
                 {
-                    title: 'Birthday Party',
-                    start: '2014-09-13T07:00:00'
+                    id: 310,
+                    title: 'IT310',
+                    start: '2014-11-18T08:00:00',
+                    end: '2014-11-18T09:30:00',
+                    color: '#D11919',
+                    room: 'MBB 312'
                 },
                 {
-                    title: 'Click for Google',
-                    url: 'http://google.com/',
-                    start: '2014-09-28'
+                    id: 310,
+                    title: 'IT310',
+                    start: '2014-11-20T08:00:00',
+                    end: '2014-11-20T09:30:00',
+                    color: '#D11919',
+                    room: 'MBB 312'
+                },
+                {
+                    id: 220,
+                    title: 'CS220',
+                    start: '2014-11-18T08:00:00',
+                    end: '2014-11-18T09:30:00',
+                    color: '#D11919',
+                    room: 'MBB 312'
+                },
+                {
+                    id: 220,
+                    title: 'CS220',
+                    start: '2014-11-20T08:00:00',
+                    end: '2014-11-20T09:30:00',
+                    color: '#D11919',
+                    description: 'MBB 312'
                 }
-            ]
-        });
-        
-    });
+            ],
+     });   
+});
 
 </script>
-<style>
-/*
-    body {
-        margin: 40px 10px;
-        padding: 0;
-        font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
-        font-size: 14px;
-    }
-
-    #calendar {
-        max-width: 800px;
-        margin: 0 auto;
-    }
-*/
-</style>
 </head>
 <body>
 

@@ -25,7 +25,7 @@ var defaults = {
 	nextDayThreshold: '09:00:00', // 9am
 
 	// display
-	defaultView: 'month',
+	defaultView: 'agendaWeek',
 	aspectRatio: 1.35,
 	header: {
 		left: 'title',
@@ -1084,6 +1084,7 @@ function Header(calendar, options) {
 
 		if (sections) {
 			el = $("<div class='fc-toolbar'/>")
+				.append('<div class="calendarPageTitle"><img class="calLogo" src="ACUlogo.png"/><h1 class="calTitle">Class Scheduler</h1></div>')
 				.append(renderSection('left'))
 				.append(renderSection('right'))
 				.append(renderSection('center'))
