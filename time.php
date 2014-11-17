@@ -19,6 +19,43 @@
 		<script type="text/javascript" src="loginCheck.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<!--<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"</script>-->
+
+		<!-- code for search bar auto complete -->
+		  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+  		  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  		  <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+		  <script>
+			$(function() {
+				var availableTags = [
+			      "20418 Scripting I - CS 115 - 01",
+			      "20415 Scripting II - CS 116 - 01",
+			      "20385 Programming I - CS 120 - 01",
+			      "21339 Programming I - Part 2- CS 120 - DW1",
+			      // "C",
+			      // "C++",
+			      // "Clojure",
+			      // "COBOL",
+			      // "ColdFusion",
+			      // "Erlang",
+			      // "Fortran",
+			      // "Groovy",
+			      // "Haskell",
+			      // "Java",
+			      // "JavaScript",
+			      // "Lisp",
+			      // "Perl",
+			      // "PHP",
+			      // "Python",
+			      // "Ruby",
+			      // "Scala",
+			      // "Scheme"
+			    ];
+			    $( "#course" ).autocomplete({
+			      source: availableTags
+			    });
+			});
+		  </script>
+
 	</head>
 	<body>
 		<header>
