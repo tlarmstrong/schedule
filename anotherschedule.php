@@ -40,104 +40,104 @@
             eventLimit: true, // allow "more" link when too many events
             events: [
                 {
-                    id: 230,
-                    title: 'CS230',
-                    start: '2014-11-18T15:00:00',
-                    end: '2014-11-18T16:30:00',
-                    room: 'MBB 115'
+                    id: 302,
+                    title: 'GEN302',
+                    start: '2014-11-17T17:00:00',
+                    end: '2014-11-17T18:00:00',
+                    room: 'AB 101'
                 },
                 {
-                    id: 230,
-                    title: 'CS230',
-                    start: '2014-11-20T15:00:00',
-                    end: '2014-11-20T16:30:00',
-                    room: 'MBB 115'
-                },
-                {
-                    id: 330,
-                    title: 'CS330',
-                    start: '2014-11-20T16:30:00',
-                    end: '2014-11-20T18:00:00',
-                    room: 'MBB 217'
-                },
-                {
-                    id: 330,
-                    title: 'CS330',
-                    start: '2014-11-18T16:30:00',
+                    id: 302,
+                    title: 'GEN302',
+                    start: '2014-11-18T17:00:00',
                     end: '2014-11-18T18:00:00',
-                    room: 'MBB 217'
+                    room: 'AB 101'
                 },
                 {
-                    id: 432,
-                    title: 'IS432',
-                    start: '2014-11-17T10:00:00',
-                    end: '2014-11-17T11:00:00',
-                    room: 'MBB 317'
+                    id: 302,
+                    title: 'GEN302',
+                    start: '2014-11-19T17:00:00',
+                    end: '2014-11-19T18:00:00',
+                    room: 'AB 101'
                 },
                 {
-                    id: 432,
-                    title: 'IS432',
-                    start: '2014-11-19T10:00:00',
-                    end: '2014-11-19T11:00:00',
-                    room: 'MBB 317'
+                    id: 302,
+                    title: 'GEN302',
+                    start: '2014-11-20T17:00:00',
+                    end: '2014-11-20T18:00:00',
+                    room: 'AB 101'
                 },
                 {
-                    id: 432,
-                    title: 'IS432',
-                    start: '2014-11-21T10:00:00',
-                    end: '2014-11-21T11:00:00',
-                    room: 'MBB 317'
+                    id: 201,
+                    title: 'GEN201',
+                    start: '2014-11-17T13:00:00',
+                    end: '2014-11-17T14:00:00',
+                    room: 'AB 301'
                 },
                 {
-                    id: 115,
-                    title: 'CS115',
-                    start: '2014-11-17T10:00:00',
-                    end: '2014-11-17T11:00:00',
-                    room: 'MBB 312'
+                    id: 201,
+                    title: 'GEN201',
+                    start: '2014-11-19T13:00:00',
+                    end: '2014-11-19T14:00:00',
+                    room: 'AB 301'
                 },
                 {
-                    id: 115,
-                    title: 'CS115',
-                    start: '2014-11-19T10:00:00',
-                    end: '2014-11-19T11:00:00',
-                    room: 'MBB 312'
+                    id: 201,
+                    title: 'GEN201',
+                    start: '2014-11-21T13:00:00',
+                    end: '2014-11-21T14:00:00',
+                    room: 'AB 301'
                 },
                 {
-                    id: 115,
-                    title: 'CS115',
-                    start: '2014-11-21T10:00:00',
-                    end: '2014-11-20T11:00:00',
-                    room: 'MBB 312'
+                    id: 103,
+                    title: 'GEN103',
+                    start: '2014-11-18T13:00:00',
+                    end: '2014-11-18T14:30:00',
+                    room: 'AB 202'
                 },
                 {
-                    id: 310,
-                    title: 'IT310',
-                    start: '2014-11-18T08:00:00',
-                    end: '2014-11-18T09:30:00',
-                    room: 'MBB 312'
+                    id: 103,
+                    title: 'GEN103',
+                    start: '2014-11-20T13:00:00',
+                    end: '2014-11-20T14:30:00',
+                    room: 'AB 202'
                 },
                 {
-                    id: 310,
-                    title: 'IT310',
-                    start: '2014-11-20T08:00:00',
-                    end: '2014-11-20T09:30:00',
-                    room: 'MBB 312'
+                    id: 101,
+                    title: 'GEN101',
+                    start: '2014-11-17T09:00:00',
+                    end: '2014-11-17T10:30:00',
+                    room: 'AB 102'
+                },
+                {
+                    id: 101,
+                    title: 'GEN101',
+                    start: '2014-11-19T09:00:00',
+                    end: '2014-11-19T10:30:00',
+                    room: 'AB 102'
+                },
+                {
+                    id: 101,
+                    title: 'GEN101',
+                    start: '2014-11-21T09:00:00',
+                    end: '2014-11-21T10:30:00',
+                    room: 'AB 102'
                 },
                 {
                     id: 220,
                     title: 'CS220',
                     start: '2014-11-18T08:00:00',
                     end: '2014-11-18T09:30:00',
-                    color: '#D11919',
-                    room: 'UNAVAILABLE'
+                    color: '#9CC12E',
+                    room: 'AB 101'
                 },
                 {
                     id: 220,
                     title: 'CS220',
                     start: '2014-11-20T08:00:00',
                     end: '2014-11-20T09:30:00',
-                    color: '#D11919',
-                    room: 'UNAVAILABLE'
+                    color: '#9CC12E',
+                    room: 'AB 101'
                 }
             ],
             //https://code.google.com/p/fullcalendar/issues/detail?id=236
@@ -154,16 +154,17 @@
 <body>
 <div class="container">                                          
     <div class="dropdown">
-        <button class="btn btn-default dropdown-toggle" type="button" id="buildingMenu" data-toggle="dropdown">Building: Mabee Business Building
+        <button class="btn btn-default dropdown-toggle" type="button" id="buildingMenu" data-toggle="dropdown">Building: Another Building
         <span class="caret"></span></button>
         <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
           <li role="presentation"><a role="menuitem" tabindex="-1" href="bsbschedule.php">Bible Studies Building</a></li>
           <li role="presentation"><a role="menuitem" tabindex="-1" href="scienceschedule.php">Science Building</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="anotherschedule.php">Another Building</a></li>
+          <li role="presentation" class="divider"></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="calendar.php">Back to Mabee Business Building</a></li>
         </ul>
     </div>
     <div id='calendar'></div>
-    <a class="btn btn-lg btn-primary btn-block" id="calButton" href="confirm.php">Confirm Class</a>
+    <a class="btn btn-lg btn-primary btn-block" id="calButton" href="confirm.php">Confirm Schedule</a>
 </div>
 
 </body>

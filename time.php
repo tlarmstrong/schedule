@@ -71,12 +71,27 @@
             	<!--<div id="course">Course Number / CRN</div>-->
             	<input class="form-control" id="course" type="text" name="courseNum" placeholder="Course Number (CS330) / CRN" autofocus/>
 
+            	<div class="checkbox">
+  					<label>
+				        <input type="checkbox" name="gradReq" id ="gradReq" value ="gradReq"/>Graduation Requirement for Seniors
+				    </label>
+				</div>
+
 	             <div>
 					<select class="form-control" name="instructor" id="instructor" class="dropdown">  
 		               <option value = "">Instructor</option>
 		               <option value = "James Prather">James Prather</option>
 		               <option value = "John Homer">John Homer</option>
 		               <option value = "Brent Reeves">Brent Reeves</option>
+		            </select>
+	        	</div>
+
+	        	<div>
+					<select class="form-control" name="rmCapacity" id="capacity" class="dropdown">  
+		               <option value = "">Number of Seats</option>
+		               <option value = "small">25 or less</option>
+		               <option value = "medium">26 to 50</option>
+		               <option value = "large">over 50</option>
 		            </select>
 	        	</div>
 
@@ -122,6 +137,13 @@
 		               <option value = " 7:00"> 7:00</option>
 		            </select>
 	        	</div>
+
+	        	<div class="checkbox">
+  					<label>
+				        <input type="checkbox" name="compLab" id ="compLab" value ="Computer Lab"/>Requires Lab Computers
+				    </label>
+				</div>
+
 	            <div id="errorMessage"></div>
 	            <button class="btn btn-lg btn-primary btn-block" type="submit">Schedule it!</button>
 			</form>
