@@ -164,7 +164,7 @@
         </ul>
     </div>
     <div id='calendar'></div>
-    <a class="btn btn-lg btn-primary btn-block" id="calButton" href="confirm.php">Confirm Schedule</a>
+    <a class="btn btn-lg btn-primary btn-block" id="calButton" href="confirm.php">Confirm Class</a>
 </div>
 
 </body>
