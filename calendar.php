@@ -163,7 +163,7 @@
         </ul>
     </div>
     <div id='calendar'></div>
-    <a class="btn btn-lg btn-primary btn-block" id="calButton" href="confirm.php">Confirm Class</a>
+    <a class="btn btn-lg btn-primary btn-block" id="calButton" href="confirm3.php">Confirm Class</a>
 </div>
 
 </body>
