@@ -19,6 +19,13 @@ body {
   float: left;
 }
 
+.topStripWelcome
+{
+  margin:0px -30px 10px -30px;
+  background-color: #E3E3E3;
+  padding:2px 10px 2px 10px;
+}
+
 .form-signin 
 {
   max-width: 375px;
@@ -27,6 +34,19 @@ body {
   background-color: #F5F5F5;
   border-radius: 5px;
   margin-bottom:10px;
+}
+
+.topStripForm
+{
+  margin:0px -25px 10px -25px;
+  background-color: #E3E3E3;
+  padding:2px 10px 2px 10px;
+}
+
+.col-md-5
+{
+  margin-left: 10px !important;
+  width: 48% !important;
 }
 
 #topField
@@ -104,21 +124,6 @@ body {
 {
   height: 40px;
   color: red;
-}
-
-.bodyWrap
-{
-  /*display: -webkit-flex;
-  display: -moz-box;
-  display: flex;
-  flex-direction:column;*/
-  max-width: 1000px !important;
-  padding-right: 20px;
-  padding-left: 20px;
-  padding-top:10px;
-  padding-bottom:20px;
-  margin-right:auto;
-  margin-left:auto;
 }
 
 #buildingMenu
@@ -226,6 +231,95 @@ h2
   padding: 30px;
 }
 
+.todoList
+{
+  max-width: 100%;
+  padding: 5px;
+  margin: 0 auto;
+  background-color: #F5F5F5;
+  border-radius: 5px;
+  margin-bottom:30px;
+  padding: 30px;
+}
+
+.todoTitle
+{
+  float: right;
+  font-size: 25px;
+  margin-top:-25px;
+  margin-right: -12px;
+}
+
+.todo1
+{
+  margin-top: 40px !important;
+}
+
+.todoIssue
+{
+  margin-bottom:30px !important;
+}
+
+.todoListDetails
+{
+  float: left !important;
+  margin-top: -30px !important;
+  min-width:800px !important;
+  margin-bottom: 5px;
+}
+
+.bodyWrap
+{
+  /*display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  flex-direction:column;*/
+  max-width: 1000px !important;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top:40px;
+  padding-bottom:20px;
+  margin-right:auto;
+  margin-left:auto;
+}
+
+.issue
+{
+  background-color: #F5F5F5;
+  border-radius: 5px;
+  margin:5px;
+  padding: 20px !important;
+}
+
+.col-md-4 
+{
+    width: 32% !important;
+}
+
+.topStrip
+{
+  margin:0px -20px 10px -20px;
+  background-color: #E3E3E3;
+  padding:2px 10px 2px 10px;
+}
+
+.todoListForm
+{
+  padding:0px !important;
+}
+
+.room
+{
+  height: 150px;
+}
+.roomImages
+{
+  height:100px;
+  border-radius: 5px;
+  float:left;
+  margin-right:auto;
+}
+
 .intro
 {
   font-size: 50px;
@@ -238,4 +332,25 @@ h2
   margin-bottom: 50px;
   margin-top: -10px;
   font-size: 15px;
+}
+
+.link:link
+{
+  text-decoration:none;
+  color:#931693 !important;
+}
+.link:visited  /* visited */
+{ 
+  text-decoration:none;
+    color:#7E61A3 !important;
+} 
+.link:hover  /* hover */
+{ 
+  text-decoration:none !important;
+    color:#CC0099 !important;
+    } 
+.link:active  /* select */
+{ 
+  text-decoration:none;
+    color:#461D7C !important;
 }

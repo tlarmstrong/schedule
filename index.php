@@ -29,7 +29,7 @@
 			</div>
 		</header>
 		<div class="container">
-			<form class="form-signin" role="form" name="signUp" action="enter.php" method="post" onsubmit="return validateForm();">
+			<form class="form-signin" role="form" name="signUp" action="todo.php" method="post" onsubmit="return validateForm();">
 	        <!--<h2 class="form-signin-heading">Login</h2> -->
             	<input class="form-control" id="topField" type="text" name="username" placeholder="username" autofocus/>
 				<input class="form-control" type="password" name="password" placeholder="password"/>

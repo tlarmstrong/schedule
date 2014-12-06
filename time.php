@@ -67,7 +67,9 @@
 		<div class="container">
         	<!-- http://www.w3schools.com/js/js_form_validation.asp | Copyright 1999-2014 by Refsnes Data. All Rights Reserved. -->	
             <form class="form-signin" name="schedule" action="calendar.php" method="post" onsubmit="return validateClass();">
-           		<div id="semyearRemind">Spring 2015</div>
+           		<div class="topStripForm">
+            		<h5>Edit an existing class</h5>
+            	</div>
             	<!--<div id="course">Course Number / CRN</div>-->
             	<input class="form-control" id="course" type="text" name="courseNum" placeholder="Course Number (CS330) / CRN" autofocus/>
 
@@ -77,24 +79,48 @@
 				    </label>
 				</div>
 
-	             <div>
-					<select class="form-control" name="instructor" id="instructor" class="dropdown">  
-		               <option value = "">Instructor</option>
-		               <option value = "James Prather">James Prather</option>
-		               <option value = "John Homer">John Homer</option>
-		               <option value = "Brent Reeves">Brent Reeves</option>
-		            </select>
-	        	</div>
+	        	<div class="topStripForm">
+            		<h5>Choose a room type</h5>
+            	</div>
+	        	<div class="checkbox">
+  					<label>
+				        <input type="checkbox" name="roomType" id ="roomType" value ="auditorium"/>
+				        <div class="room"><p>Auditorium | Seats: 300</p><img src="auditorium.jpg" alt="auditorium classroom" class="roomImages">
+				        </div>
+				    </label>
+				</div>
+				<div class="checkbox">
+  					<label>
+				        <input type="checkbox" name="roomType" id ="roomType" value ="largeRoom"/>
+				        <div class="room"><p>Large Smart Room | Seats: 100</p><img src="largeRoom.jpg" alt="large classroom" class="roomImages">
+				        </div>
+				    </label>
+				</div>
+				<div class="checkbox">
+  					<label>
+				        <input type="checkbox" name="roomType" id ="roomType" value ="smallRoom"/>
+				        <div class="room"><p>Small Smart Room | Seats: 30</p><img src="smartRoom.png" alt="small classroom" class="roomImages">
+				        </div>
+				    </label>
+				</div>
+				<div class="checkbox">
+  					<label>
+				        <input type="checkbox" name="roomType" id ="roomType" value ="workRoom"/>
+				        <div class="room"><p>Work Room | Seats: 30</p><img src="workRoom.jpg" alt="work classroom" class="roomImages">
+				        </div>
+				    </label>
+				</div>
+				<div class="checkbox">
+  					<label>
+				        <input type="checkbox" name="roomType" id ="roomType" value ="lab"/>
+				        <div class="room"><p>Computer Lab | Seats: 30</p><img src="computerLab.jpg" alt="computer lab" class="roomImages">
+				        </div>
+				    </label>
+				</div>
 
-	        	<div>
-					<select class="form-control" name="rmCapacity" id="capacity" class="dropdown">  
-		               <option value = "">Number of Seats</option>
-		               <option value = "small">25 or less</option>
-		               <option value = "medium">26 to 50</option>
-		               <option value = "large">over 50</option>
-		            </select>
-	        	</div>
-
+				<div class="topStripForm">
+            		<h5>Edit day and time</h5>
+            	</div>
             	<div class="checkbox">
   					<label>
 				        <input type="checkbox" name="testDay" id ="Monday" value ="Monday"/>Monday
@@ -137,12 +163,6 @@
 		               <option value = " 7:00"> 7:00</option>
 		            </select>
 	        	</div>
-
-	        	<div class="checkbox">
-  					<label>
-				        <input type="checkbox" name="compLab" id ="compLab" value ="Computer Lab"/>Requires Lab Computers
-				    </label>
-				</div>
 
 	            <div id="errorMessage"></div>
 	            <button class="btn btn-lg btn-primary btn-block" type="submit">Schedule it!</button>
