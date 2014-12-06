@@ -160,13 +160,29 @@
             		<h3>Edit a new class</h3>
             	</div>
             	<!--<div id="course">Course Number / CRN</div>-->
-            	<input class="form-control" id="course" type="text" name="courseNum" placeholder="Course Number (CS330) / CRN" autofocus/>
 
-            	<div class="checkbox">
-  					<label>
-				        <input type="checkbox" name="gradReq" id ="gradReq" value ="gradReq"/>Graduation Requirement for Seniors
-				    </label>
-				</div>
+            	<div>
+					<select class="form-control" name="semester" id="semester" class="dropdown" autofocus>  
+		               <option value = "">Semester</option>
+		               <option value = "Fall">Fall</option>
+		               <option value = "Spring">Spring</option>
+		               <option value = "Summer I">Summer I</option>
+		               <option value = "Summer II">Summer II</option>
+		               <option value = "Summer III">Summer III</option>
+		               <option value = "Summer III">Summer III</option>
+		               <option value = "Summer IV">Summer III</option>
+		            </select>
+	        	</div>
+	        	<div>
+					<select class="form-control" name="year" id="year" class="dropdown">  
+		               <option value = "">Year</option>
+		               <option value = "2014">2014</option>
+		               <option value = "2015">2015</option>
+		               <option value = "2016">2016</option>
+		            </select>
+	        	</div>
+
+            	<input class="form-control" id="course" type="text" name="courseNum" placeholder="Course Number (CS330) / CRN" autofocus/>
 
 	        	<div class="topStripWelcome">
             		<h5>Choose a room type</h5>

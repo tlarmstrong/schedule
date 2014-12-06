@@ -177,7 +177,7 @@
 							  <dd>Conflict: CS330 HCI II</dd>
 							  <dd>Advising Contact: <a class="link" href="mailto:someone@example.com">Kathy Garrison</a></dd>
 							  </br>
-						<a class="btn btn-lg btn-primary btn-block" href="confirm2.php">Done!</a>
+						<a class="btn btn-lg btn-primary btn-block" href="confirm.php">Done!</a>
   					</div>
 				  
 				  <div class="col-md-4 issue">

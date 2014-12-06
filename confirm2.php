@@ -30,8 +30,8 @@
 		</header>
 		<div class="container">
 			<div class="confirmMessage">
-	        	<p class="intro">Yay!</p>
-	        	<p class="message">CS435 issues removed from your To Do List.</p>
+	        	<p class="intro">Confirmed!</p>
+	        	<p class="message">CS435 added to the schedule.</p>
 	        	<a class="btn btn-lg btn-primary btn-block" href="todo.php">To Do / Edit New</a>
 	        	<a class="btn btn-lg btn-primary btn-block" href="issue1c.php">To Do Details</a>
 	        	<a class="btn btn-lg btn-primary btn-block" href="index.php">Logout</a>

@@ -30,10 +30,10 @@
 		</header>
 		<div class="container">
 			<div class="confirmMessage">
-	        	<p class="intro">Confirmed!</p>
-	        	<p class="message">CS115 has been added to the schedule.</p>
-	        	<a class="btn btn-lg btn-primary btn-block" href="issue1c.php">To Do / Edit New</a>
-	        	<a class="btn btn-lg btn-primary btn-block" href="enter.php">To Do Details</a>
+	        	<p class="intro">Yay!</p>
+	        	<p class="message">CS115 removed from your to do list.</p>
+	        	<a class="btn btn-lg btn-primary btn-block" href="todo.php">To Do / Edit New</a>
+	        	<a class="btn btn-lg btn-primary btn-block" href="issue1b.php">To Do Details</a>
 	        	<a class="btn btn-lg btn-primary btn-block" href="index.php">Logout</a>
 			</div>
 		</div>
