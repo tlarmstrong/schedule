@@ -124,7 +124,7 @@
 							  <dd>Conflict: BIBL211 Old Testament</dd>
 							  <dd>Advising Contact: <a class="link" href="mailto:someone@example.com">Kathy Garrison</a></dd>
 							  </br>
-						<a class="btn btn-lg btn-primary btn-block" href="confirm1.php">Done!</a>
+						<a class="btn btn-lg btn-primary btn-block" href="confirm.php">Done!</a>
   					</div>
             	<!--<a class="btn btn-lg btn-primary btn-block" href="enter.php">Resolve</a>-->
 
